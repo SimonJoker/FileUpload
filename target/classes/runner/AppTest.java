@@ -1,5 +1,6 @@
 package runner;
 
+
 import jscon.com.service.UserService;
 import jscon.com.vo.User;
 import org.apache.ibatis.io.Resources;
@@ -36,7 +37,6 @@ public class AppTest {
         public static void main(String[] args)
         {
             SqlSession session = sessionFactory.openSession();
-
             try {
                 UserService userServiceObj = session.getMapper(UserService.class);
 /*                User user = new User();
